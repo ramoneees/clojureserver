@@ -9,8 +9,8 @@
       :headers{"Content-type" "text/html"}
       :body "<h1> Surprise motherfucker </h1>" })))
 
-
-  (defn create-server []
+      
+  (defn create-server [] 
     (s/run-server (app) {:port 8080}))
 
   (defn stop-server [server]  
