@@ -7,7 +7,11 @@
     (GET "/" [:as req]
       {:status 200
       :headers{"Content-type" "text/html"}
-      :body "<h1> Surprise motherfucker </h1>" })))
+      :body "<h1> Surprise motherfucker </h1>" })
+      (GET "/status" [:as req]
+        {:status 200
+        :headers{"Content-type" "text/html"}
+        :body "<h1> what the heck </h1>" })))
 
       
   (defn create-server [] 
